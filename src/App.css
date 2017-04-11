@@ -1,0 +1,74 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Result {
+  font-size: 50px;
+}
+
+.DragArea {
+  position: relative;
+  background-color: #ebebeb;
+  width: 999px;
+  height: 99px;
+}
+
+.DragArea__shiftIndicator {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  line-height: 20px;
+  font-size: 14px;
+  height: 20px;
+  width: 60px;
+  color: #f0f;
+  border: 1px solid #f0f;
+  border-radius: 3px;
+}
+
+.Draggable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+.Draggable__handle {
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  top: -9px;
+  left: -9px;
+  background-color: #f0f;
+}
